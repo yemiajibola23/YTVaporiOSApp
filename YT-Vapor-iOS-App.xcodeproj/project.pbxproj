@@ -8,12 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		DB9261502A8599C100F0945A /* YT_Vapor_iOS_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB92614F2A8599C100F0945A /* YT_Vapor_iOS_AppApp.swift */; };
-		DB9261522A8599C100F0945A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9261512A8599C100F0945A /* ContentView.swift */; };
+		DB9261522A8599C100F0945A /* SongListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9261512A8599C100F0945A /* SongListView.swift */; };
 		DB9261542A8599C400F0945A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB9261532A8599C400F0945A /* Assets.xcassets */; };
 		DB9261572A8599C400F0945A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB9261562A8599C400F0945A /* Preview Assets.xcassets */; };
 		DB9261612A8599C500F0945A /* YT_Vapor_iOS_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9261602A8599C500F0945A /* YT_Vapor_iOS_AppTests.swift */; };
 		DB92616B2A8599C500F0945A /* YT_Vapor_iOS_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB92616A2A8599C500F0945A /* YT_Vapor_iOS_AppUITests.swift */; };
 		DB92616D2A8599C500F0945A /* YT_Vapor_iOS_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB92616C2A8599C500F0945A /* YT_Vapor_iOS_AppUITestsLaunchTests.swift */; };
+		DBF97ABE2A869166004BEFEA /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF97ABD2A869166004BEFEA /* Song.swift */; };
+		DBF97AC02A8691C0004BEFEA /* SongListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF97ABF2A8691C0004BEFEA /* SongListViewModel.swift */; };
+		DBF97AC22A8693CA004BEFEA /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF97AC12A8693CA004BEFEA /* HttpClient.swift */; };
+		DBF97AC42A86947E004BEFEA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF97AC32A86947E004BEFEA /* Constants.swift */; };
+		DBF97AC62A86A14C004BEFEA /* ModalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF97AC52A86A14C004BEFEA /* ModalType.swift */; };
+		DBF97AC82A86A24A004BEFEA /* AddUpdateSongView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF97AC72A86A24A004BEFEA /* AddUpdateSongView.swift */; };
+		DBF97ACA2A86A28B004BEFEA /* AddUpdateSongViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF97AC92A86A28B004BEFEA /* AddUpdateSongViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +43,7 @@
 /* Begin PBXFileReference section */
 		DB92614C2A8599C100F0945A /* YT-Vapor-iOS-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YT-Vapor-iOS-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB92614F2A8599C100F0945A /* YT_Vapor_iOS_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YT_Vapor_iOS_AppApp.swift; sourceTree = "<group>"; };
-		DB9261512A8599C100F0945A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DB9261512A8599C100F0945A /* SongListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListView.swift; sourceTree = "<group>"; };
 		DB9261532A8599C400F0945A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB9261562A8599C400F0945A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DB92615C2A8599C500F0945A /* YT-Vapor-iOS-AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "YT-Vapor-iOS-AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +51,13 @@
 		DB9261662A8599C500F0945A /* YT-Vapor-iOS-AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "YT-Vapor-iOS-AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB92616A2A8599C500F0945A /* YT_Vapor_iOS_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YT_Vapor_iOS_AppUITests.swift; sourceTree = "<group>"; };
 		DB92616C2A8599C500F0945A /* YT_Vapor_iOS_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YT_Vapor_iOS_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DBF97ABD2A869166004BEFEA /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		DBF97ABF2A8691C0004BEFEA /* SongListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListViewModel.swift; sourceTree = "<group>"; };
+		DBF97AC12A8693CA004BEFEA /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
+		DBF97AC32A86947E004BEFEA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DBF97AC52A86A14C004BEFEA /* ModalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalType.swift; sourceTree = "<group>"; };
+		DBF97AC72A86A24A004BEFEA /* AddUpdateSongView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUpdateSongView.swift; sourceTree = "<group>"; };
+		DBF97AC92A86A28B004BEFEA /* AddUpdateSongViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUpdateSongViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +108,11 @@
 		DB92614E2A8599C100F0945A /* YT-Vapor-iOS-App */ = {
 			isa = PBXGroup;
 			children = (
+				DB9261792A8599ED00F0945A /* Models */,
+				DB92617A2A8599FB00F0945A /* Views */,
+				DBF97ABB2A869065004BEFEA /* View Models */,
+				DBF97ABC2A86909F004BEFEA /* Utilities */,
 				DB92614F2A8599C100F0945A /* YT_Vapor_iOS_AppApp.swift */,
-				DB9261512A8599C100F0945A /* ContentView.swift */,
 				DB9261532A8599C400F0945A /* Assets.xcassets */,
 				DB9261552A8599C400F0945A /* Preview Content */,
 			);
@@ -125,6 +142,42 @@
 				DB92616C2A8599C500F0945A /* YT_Vapor_iOS_AppUITestsLaunchTests.swift */,
 			);
 			path = "YT-Vapor-iOS-AppUITests";
+			sourceTree = "<group>";
+		};
+		DB9261792A8599ED00F0945A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DBF97ABD2A869166004BEFEA /* Song.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DB92617A2A8599FB00F0945A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DB9261512A8599C100F0945A /* SongListView.swift */,
+				DBF97AC72A86A24A004BEFEA /* AddUpdateSongView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DBF97ABB2A869065004BEFEA /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				DBF97ABF2A8691C0004BEFEA /* SongListViewModel.swift */,
+				DBF97AC92A86A28B004BEFEA /* AddUpdateSongViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		DBF97ABC2A86909F004BEFEA /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				DBF97AC32A86947E004BEFEA /* Constants.swift */,
+				DBF97AC12A8693CA004BEFEA /* HttpClient.swift */,
+				DBF97AC52A86A14C004BEFEA /* ModalType.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +310,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB9261522A8599C100F0945A /* ContentView.swift in Sources */,
+				DBF97AC82A86A24A004BEFEA /* AddUpdateSongView.swift in Sources */,
+				DBF97ACA2A86A28B004BEFEA /* AddUpdateSongViewModel.swift in Sources */,
+				DBF97AC22A8693CA004BEFEA /* HttpClient.swift in Sources */,
+				DBF97AC62A86A14C004BEFEA /* ModalType.swift in Sources */,
+				DBF97ABE2A869166004BEFEA /* Song.swift in Sources */,
+				DBF97AC02A8691C0004BEFEA /* SongListViewModel.swift in Sources */,
+				DB9261522A8599C100F0945A /* SongListView.swift in Sources */,
 				DB9261502A8599C100F0945A /* YT_Vapor_iOS_AppApp.swift in Sources */,
+				DBF97AC42A86947E004BEFEA /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,7 +405,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -399,7 +459,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -425,6 +485,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,6 +515,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
