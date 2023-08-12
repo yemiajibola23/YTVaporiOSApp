@@ -41,11 +41,22 @@ final class AddUpdateSongViewModel: ObservableObject {
                                              httpMethod: HttpMethod.POST.rawValue)
     }
     
+    func updateSong() async throws {
+        let urlString = Constants.baseURL + Endpoints.songs
+        
+        guard let url = URL(string: urlString) else {
+            throw HttpError.badURL
+        }
+        
+        let songToUpdate = Song(id: songID, title: songTitle)
+        try await HttpClient.shared.sendData(to: url, object: songToUpdate, httpMethod: HttpMethod.PUT.rawValue)
+    }
+    
     func addUpdateAction(completion: @escaping () -> Void) {
         Task {
             do {
                 if isUpdating {
-                    // TODO: UpdateSong()
+                    try await updateSong()
                 } else {
                     try await addSong()
                 } // if-else

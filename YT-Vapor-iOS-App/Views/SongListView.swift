@@ -16,13 +16,14 @@ struct SongListView: View {
             List {
                 ForEach(viewModel.songs) { song in
                     Button {
-                       print("selected")
+                        modal = .update(song)
                     } label: {
                         Text(song.title)
                             .font(.title3)
                             .foregroundColor(Color(.label))
                     } // label
                 } // for-each
+                .onDelete(perform: viewModel.delete)
             } // list
             .navigationTitle(Text("🎵 Songs"))
             .toolbar {
@@ -40,17 +41,17 @@ struct SongListView: View {
                     try await viewModel.fetchSongs()
                 } catch {
                     print("🚫 Error: \(error)")
-                }
-            }
+                } // do-catch
+            } // task
         }) { modal in
             switch modal {
             case .add:
                 AddUpdateSongView(viewModel: AddUpdateSongViewModel())
             case .update(let song):
                 AddUpdateSongView(viewModel: AddUpdateSongViewModel(currentSong: song))
-            }
+            } // switch
             
-        }
+        } //sheet
         .onAppear {
             Task {
                 do {
